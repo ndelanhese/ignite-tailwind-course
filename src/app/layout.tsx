@@ -9,7 +9,12 @@ export const metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="pt-BR">
-    <body>{children}</body>
+    <body>
+      <div className="grid min-h-full-dynamic-display grid-cols-home-grid">
+        <aside className="border-r border-zinc-200 px-5 py-8">sidebar</aside>
+        <main className="px-5 pb-12 pt-8">{children}</main>
+      </div>
+    </body>
   </html>
 )
 
